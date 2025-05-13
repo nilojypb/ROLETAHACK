@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roleta Inteligente</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Tela de Login -->
+    <div id="login-container">
+        <h2>Login</h2>
+        <form id="login-form">
+            <input type="email" id="email" placeholder="E-mail" required>
+            <input type="password" id="password" placeholder="Senha" required>
+            <button type="submit">Login</button>
+        </form>
+        <p>Não tem uma conta? <a href="#" id="signup-link">Cadastrar</a></p>
+    </div>
+
+    <!-- Tela de Sugestões de Apostas (aparece após login) -->
+    <div id="sugestoes-container" style="display:none;">
+        <h2>Sugestões de Apostas</h2>
+        <button id="analisar">Analisar</button>
+        <div id="sugestoes-list"></div>
+        <p><a href="#" id="logout">Sair</a></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
